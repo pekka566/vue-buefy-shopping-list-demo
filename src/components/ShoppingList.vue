@@ -82,7 +82,8 @@
         })
       },
       moveToModifyItem (timestamp) {
-        this.item = this.items.find(x => x.item.timestamp === timestamp)
+        let item = this.items.find(x => x.item.timestamp === timestamp)
+        this.item = item.item
         this.isModify = true
         this.activeTab = 2
       }
