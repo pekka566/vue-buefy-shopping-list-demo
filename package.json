@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "node server.js",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "buefy": "^0.6.1",
+    "express": "^4.16.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
